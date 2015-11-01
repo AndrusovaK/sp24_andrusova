@@ -154,6 +154,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 	font-weight: bold;
 	border: 2px solid #ffcd34;
 	padding: 8px 52px 9px 20px;
+	position: relative;
+}
+
+.promo-btn:before {
+	content: "";
+	position: absolute;
+	background-image: url('../img/arrow_right_icon.png');
+	background-size: 100%;
+	width: 13px;
+	height: 19px;
+	right: 10px;
+	top: 11px;
 }
 
 .promo-btn:hover {
@@ -173,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 }
 
 .subtitle {
-	font-style: 24px;
+	font-size: 24px;
 	color: #ffcd34;
 	font-weight: normal;
 	margin-bottom: 35px;
@@ -222,11 +234,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 	font-weight: bold;
 	background-color: #ffcd34;
 	color: #202e3b;
-	width: 220px;
-	text-align: center;
+	padding: 0 18px;
 	border: none;
 }
 
+.consult-btn {
+	width: 240px;
+}
 
 /*Преимущества*/
 
@@ -441,4 +455,116 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 .page-footer .main-nav .call-action:active {
 	color: #ffcd34;
 	border: none;
+}
+
+
+/*Страница Портфолио*/
+
+.black-line:before {
+	content:"";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	background-color: #000000;	
+}
+
+.subheader {
+	background: url('../img/bg_portfolio_catalog.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.subheader-portfolio {
+	height: 115px;
+	background-position: 0 90%;
+	position: relative;
+}
+
+.subheader-portfolio .subtitle {
+	line-height: 105px;
+}
+
+.portfolio-nav li {
+	display: inline-block;
+	line-height: 105px;
+	margin-right: 36px;
+}
+
+.portfolio-nav li:last-child {
+	margin-right: 0;
+}
+
+.portfolio-nav a {
+	display: inline-block;
+	color: #fff;
+}
+
+.portfolio-nav a:hover {
+	font-weight: bold;
+}
+
+.portfolio-nav a:active {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*Проекты*/
+
+.project {
+	position: relative;
+	height: 408px;
+	padding-top: 102px;
+}
+
+.project-details {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 246px;
+	width: 322px;
+	background-color: #fff;
+	padding: 29px 27px 29px 30px;
+	color: #202e3b;
+}
+
+.project-details_title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.project-details_info {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.project-details_btn {
+	display: inline-block;
+	height: 40px;
+	font-size: 15px;
+	line-height: 40px;
+	text-decoration: none;
+	width: 108px;
+	margin-top: 20px;
+}
+
+.project1 {
+	background: url('../pict/project1.jpg') no-repeat 0 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.project2 {
+	background: url('../pict/project2.jpg') no-repeat 0 80%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.project3 {
+	background: url('../pict/project3.jpg') no-repeat 0 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 412px;
 }
