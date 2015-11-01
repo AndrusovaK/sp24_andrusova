@@ -1,0 +1,444 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:after{
+    content:'';
+    clear:both;
+    display:table;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container:after{
+    content:'';
+    clear:both;
+    display:table;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.inline {
+	display: inline-block;
+}
+
+/*Header*/
+
+.page-header {
+    background-color: #ffcd34;
+    padding: 20px 0 28px;
+	position: relative;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo-img, logo-brand {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.logo-brand {
+    font-size: 24px;   
+	margin-left: 10px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    opacity: 0.55;
+    padding: 10px 20px;
+	display: inline-block;
+	border: 2px solid #FFCD34;
+}
+
+.page-header .call-action {
+	background-color: #ffe184;
+	opacity: inherit;
+	border: none;
+}
+
+.main-nav a.active {
+    opacity: inherit;
+}
+
+.main-nav a:hover {
+    border: 2px solid rgba(52, 44, 44, 0.3);
+    opacity: 1;
+}
+
+.main-nav a:active {
+	border: 2px solid rgba(52, 44, 44, 0.6);
+}
+
+.page-header .call-action:hover {
+	border: none;
+	background-color: #ffecb2;
+}
+
+.page-header .call-action:active {
+	border: none;
+	background-color: #f6bf16;
+}
+
+
+/*Промо-блок*/
+
+.promo {
+	background: url('../img/bg-promo.jpg') no-repeat 50% 70%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+	padding: 130px 0;
+	position: relative;
+}
+
+.stripe:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 14px;
+	width: 100%;
+	display: block;
+	background: linear-gradient(135deg, rgb(255, 205, 52) 35%, rgb(0, 0, 0) 35%, rgb(0, 0, 0) 65%, rgb(255, 205, 52) 65%);
+	-webkit-background-size: 30px 14px;
+	background-size: 30px 14px;
+}
+
+.promo-slogan {
+	font-size: 44px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.promo-title {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 160px;
+	margin-bottom: 28px;
+	color: #e1e1e1;
+}
+
+.promo-btn {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border: 2px solid #ffcd34;
+	padding: 8px 52px 9px 20px;
+}
+
+.promo-btn:hover {
+	border: 2px solid  #ffd966;
+}
+
+.promo-bth:active {
+	border: 2px solid  #ffe390;
+}
+
+
+/*Обратная связь*/
+
+.consult {
+	background-color: #202e3b;
+	padding: 30px 0 35px;
+}
+
+.subtitle {
+	font-style: 24px;
+	color: #ffcd34;
+	font-weight: normal;
+	margin-bottom: 35px;
+}
+
+.consult-form input, 
+.consult-form button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 45px;
+}
+
+.consult-form input {
+	background-color: #202e3b;
+	border: 1px solid #ffcd34;
+	width: 198px;
+	padding-left: 20px;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+.consult-form input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.consult-form input[type='date']::-webkit-inner-spin-button { 
+	display: none; 
+}
+
+.consult-form input[type='date']::-webkit-calendar-picker-indicator { 
+	color: #ffcd34; 
+	background: #202e3b;
+	width: 17px;
+}
+
+.consult-form input[type='date']::-webkit-datetime-edit-month-field,
+.consult-form input[type='date']::-webkit-datetime-edit-text,
+.consult-form input[type='date']::-webkit-datetime-edit-day-field,
+.consult-form input[type='date']::-webkit-datetime-edit-year-field { 
+	color: #fff; 
+}
+
+.btn {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #ffcd34;
+	color: #202e3b;
+	width: 220px;
+	text-align: center;
+	border: none;
+}
+
+
+/*Преимущества*/
+
+.advantages {
+	padding: 45px 0;
+}
+
+.advantage-item {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 25%;
+	font-size: 13px;
+	line-height: 16px;
+	padding-left: 60px;
+}
+
+.advantage-tools {
+	background: url('../pict/advantage_item1.png') no-repeat 0;
+}
+
+.advantage-worker {
+	background: url('../pict/advantages_item2.png') no-repeat 0;
+}
+
+.advantage-barrier {
+	background: url('../pict/advantages_item3.png') no-repeat 0;
+}
+
+.advantage-specialist {
+	background: url('../pict/advantages_item4.png') no-repeat 15px ;
+}
+
+/*Спецпредложения*/
+
+.technic {
+	background-color: #f3f3f3;
+	padding: 40px 0 68px 0;
+	position: relative;
+}
+
+.technic .subtitle {
+	color: #000;
+	font-weight: bold;
+}
+
+.technic-nav {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 25%;
+}
+
+.deals {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 75%;
+}
+
+.technic-nav li {
+	list-style: none;
+	font-size: 16px;
+	line-height: 38px;
+}
+
+.technic-nav a {
+	color: #202e3b;
+}
+
+.deals .subtitle {
+	margin-bottom: 30px;
+}
+
+.deals-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.deals-table tr {
+	height: 35px;
+}
+
+.deals-table tr:nth-child(2n+1) {
+	background-color: #fff;
+}
+
+.deals-table tr:first-child {
+	background-color: #dfdfdf;
+	text-align: left;
+}
+
+
+/*About*/
+
+.about {
+	background-color: #202e3b;
+	padding: 40px 0 65px 0;
+	position: relative;
+}
+
+.about .subtitle {
+	color: #fff;
+	font-size: 26px;
+}
+
+.about-numbers {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 34%;
+}
+
+.about-reviews {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 66%;
+}
+
+.about-numbers li {
+	display: inline-block;
+	list-style: none;
+	font-size: 18px;
+	color: #9e9e9e;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+
+.number {
+	display: inline-block;
+	font-size: 38px;
+	color: #f1b132;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.number-text  {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.about-reviews-item {
+	margin-bottom: 40px;
+}
+
+.about-reviews-item_img, .about-reviews-item blockquote {
+	display: inline-block;
+} 
+
+.about-reviews-item_img {
+	max-width: 120px;
+	max-height: 120px;
+	border: 3px solid  #f1b132;
+	border-radius: 3px;
+	margin-right: 20px;
+}
+
+.about-reviews-item blockquote {
+	width: 75%;
+	vertical-align: top;
+	font-size: 18px;
+}
+
+.about-reviews-item p {
+	color: #fff;
+	font-style: italic;
+	margin-bottom: 13px;
+}
+
+.about-reviews-item cite {
+	color: #f1b132;
+	font-style: normal;
+	font-weight: bold;
+}
+
+/*Карта*/
+
+.map {
+	height: 500px;
+}
+
+/*Footer*/
+
+.page-footer {
+	background-color: #202e3b;
+	padding: 20px 0;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: #ffcd34;
+}
+
+.page-footer .main-nav a {
+	color: #ffffff;
+    padding: 10px 20px;
+	display: inline-block;
+	border: 2px solid #202e3b;
+	opacity: 1;
+}
+
+.page-footer .main-nav a:hover {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.page-footer .main-nav a:active {
+	border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.page-footer .main-nav .call-action, 
+.page-footer .main-nav .call-action:hover,
+.page-footer .main-nav .call-action:active {
+	color: #ffcd34;
+	border: none;
+}
