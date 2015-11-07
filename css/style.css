@@ -881,10 +881,22 @@ input, select, textarea {outline: none;}
 	margin-bottom: 20px;
 	background-color: #fff;
 	padding: 25px 30px 33px;
+	position: relative;
 }
 
 .technic-item:nth-child(even) {
 	margin-right: 0;
+}
+
+.new:before {
+	content: "";
+	position: absolute;
+	background-size: 100%;
+	width: 73px;
+	height: 72px;
+	right: 0px;
+	top: 0px;
+	background-image: url('../img/new.png');
 }
 
 .technic-item_heading {
@@ -1020,5 +1032,16 @@ input, select, textarea {outline: none;}
 .technic-item del {
 	color: #d12222;
 	margin-right: 5px;
+}
+
+.sale:before {
+	content: "";
+	position: absolute;
+	background-size: 100%;
+	width: 71px;
+	height: 69px;
+	right: 0;
+	top: 0;
+	background-image: url('../img/sale.png');
 }
 
