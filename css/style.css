@@ -172,8 +172,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
 .promo-btn:before {
 	content: "";
 	position: absolute;
-	background-image: url('../img/arrow_right_icon.png');
-	background-size: 100%;
+	background-image: url('../img/spritesheet.png');
+	background-position: -69px -55px;
 	width: 13px;
 	height: 19px;
 	right: 10px;
@@ -593,8 +593,8 @@ input, select, textarea {outline: none;}
 .project-details_btn:before {
 	content: "";
     position: absolute;
-    background-image: url('../img/arrow-right-blue.png');
-    background-size: 100%;
+    background-image: url('../img/spritesheet.png');
+	background-position: -46px -55px;
     width: 13px;
     height: 19px;
     right: 14px;
@@ -672,16 +672,34 @@ input, select, textarea {outline: none;}
 	font-size: 18px;
 	margin-bottom: 17px;
 	font-weight: bold;
+	position: relative;
 }
 
-.contacts-phone {
-	background: url('../img/phone.png') no-repeat 0 50%;
+.contacts-phone:before {
+	content: "";
+	position: absolute;
+	background-image: url('../img/spritesheet.png');
+	background-position:  -46px -87px;
+	width: 20px;
+    height: 20px;
+	left: 0;
+	top: 5px;
 }
 
 .contacts-mail {
 	text-decoration: none;
 	color: #000;
-	background: url('../img/envelop.png') no-repeat 0 50%;
+}
+
+.contacts-mail:before {
+	content: "";
+	position: absolute;
+	background-image: url('../img/spritesheet.png');
+    width: 23px;
+    height: 17px;
+    background-position: -119px -55px;
+	left: 0;
+	top: 5px;
 }
 
 .order-consult h3 {
@@ -809,8 +827,8 @@ input, select, textarea {outline: none;}
 .catalog-technic-nav .subtitle {
 	padding-left: 47px;
 	background: url('../pict/logo-truck-left.png') no-repeat 0 50%;
-	-webkit-background-size: 32px 23px;
-	background-size: 32px 23px;
+	-webkit-background-size: 31px 24px;
+	background-size: 31px 24px;
 	margin-bottom: 16px;
 }
 
@@ -825,6 +843,7 @@ input, select, textarea {outline: none;}
 	background-size: 7px 11px;
 	text-decoration: none;
 	font-weight: bold;
+	position: relative;
 }
 
 .catalog-technic-nav a:hover {
@@ -857,10 +876,10 @@ input, select, textarea {outline: none;}
 .technic-nav .blue-btn:before {
 	content: "";
 	position: absolute;
-	background-image: url('../img/download.png');
-	background-size: 100%;
-	width: 17px;
-	height: 18px;
+	background-image: url('../img/spritesheet.png');
+    width: 17px;
+    height: 18px;
+    background-position: -92px -55px;
 	left: 10px;
 	top: 10px;
 }
@@ -891,12 +910,12 @@ input, select, textarea {outline: none;}
 .new:before {
 	content: "";
 	position: absolute;
-	background-size: 100%;
+	background-image: url('../img/spritesheet.png');
 	width: 73px;
-	height: 72px;
+    height: 72px;
+    background-position: -165px -5px;
 	right: 0px;
 	top: 0px;
-	background-image: url('../img/new.png');
 }
 
 .technic-item_heading {
@@ -953,11 +972,13 @@ input, select, textarea {outline: none;}
 	background-color: #354b60;
 }
 
-.button-group_more:hover {
+.button-group_more:hover,
+.order-consult-contacts .blue-btn:hover {
 	background-color: #46617a;
 }
 
-.button-group_more:active {
+.button-group_more:active
+.order-consult-contacts .blue-btn:active {
 	background-color: #567999;
 }
 
@@ -1037,11 +1058,11 @@ input, select, textarea {outline: none;}
 .sale:before {
 	content: "";
 	position: absolute;
-	background-size: 100%;
-	width: 71px;
-	height: 69px;
+	background-image: url(../img/spritesheet.png);
+    width: 71px;
+    height: 69px;
+    background-position: -160px -87px;
 	right: 0;
 	top: 0;
-	background-image: url('../img/sale.png');
 }
 
