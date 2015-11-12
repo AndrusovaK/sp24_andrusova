@@ -229,6 +229,10 @@ input, select, textarea {outline: none;}
 	color: #fff;
 }
 
+input {
+	color: #fff;
+}
+
 .consult-form input[type='date']::-webkit-inner-spin-button { 
 	display: none; 
 }
@@ -530,7 +534,8 @@ input, select, textarea {outline: none;}
 .portfolio-nav li {
 	display: inline-block;
 	line-height: 105px;
-	margin-right: 36px;
+	padding-right: 36px;
+	/* margin-right: 36px; */
 }
 
 .portfolio-nav li:last-child {
@@ -543,12 +548,12 @@ input, select, textarea {outline: none;}
 }
 
 .portfolio-nav a:hover {
-	font-weight: bold;
+	color: #ffcd34;
 }
 
 .portfolio-nav a:active {
 	text-decoration: none;
-	font-weight: bold;
+	color: #ffcd34;
 }
 
 /*Портфолио. Проекты*/
@@ -1013,6 +1018,10 @@ input, select, textarea {outline: none;}
 	color: #fff;
 	background-color: #354b60;
 	border-radius: 3px;
+}
+
+.technics-pagination a.active:hover {
+	border: 2px solid transparent;
 }
 
 .technics-pagination a:hover {
